@@ -3,7 +3,7 @@ import CloudKit
 import Cosmos
 import CoreLocation
 
-class NewPoopVC: UITableViewController, UIImagePickerControllerDelegate, CLLocationManagerDelegate, UINavigationControllerDelegate {
+class NewPoopVC: UITableViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, CLLocationManagerDelegate {
     let ipc = UIImagePickerController()
     
     let lm = CLLocationManager()
@@ -20,20 +20,33 @@ class NewPoopVC: UITableViewController, UIImagePickerControllerDelegate, CLLocat
     }
     
     @IBAction func chooseImageAction(_ sender: UIButton) {
-        self.present(ipc, animated: true)
+        let ac = UIAlertController(title: "Choose", message: "Select an option.", preferredStyle: .actionSheet)
+        
+        let cameraAction = UIAlertAction(title: "Camera", style: .default) { _ in
+            self.ipc.sourceType = .camera
+            self.present(self.ipc, animated: true)
+        }
+        
+        let photoLibraryAction = UIAlertAction(title: "Photo Library", style: .default) { _ in
+            self.ipc.sourceType = .photoLibrary
+            self.present(self.ipc, animated: true)
+        }
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel)
+        
+        ac.addAction(cameraAction)
+        ac.addAction(photoLibraryAction)
+        ac.addAction(cancelAction)
+        
+        self.present(ac, animated: true)
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         ipc.dismiss(animated: true)
-        let image = info[.imageURL] as! URL
-        self.selectedSelfie = image
-        self.tableView.reloadData()
-    }
-    
-    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-        ipc.dismiss(animated: true)
-        self.selectedSelfie = nil
-        self.tableView.reloadData()
+        if ipc.sourceType == .photoLibrary {
+            let image = info[.imageURL] as! URL
+            self.selectedSelfie = image
+        }
     }
     
     @IBAction func submitAction(_ sender: UIBarButtonItem) {
@@ -68,7 +81,6 @@ class NewPoopVC: UITableViewController, UIImagePickerControllerDelegate, CLLocat
         lm.startUpdatingLocation()
         
         ipc.delegate = self
-        ipc.sourceType = .photoLibrary
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
