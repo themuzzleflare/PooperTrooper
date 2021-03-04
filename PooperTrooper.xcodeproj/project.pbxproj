@@ -9,21 +9,50 @@
 /* Begin PBXBuildFile section */
 		7AB8F18525F046220091A20C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB8F18425F046220091A20C /* AppDelegate.swift */; };
 		7AB8F18725F046220091A20C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB8F18625F046220091A20C /* SceneDelegate.swift */; };
-		7AB8F18925F046220091A20C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB8F18825F046220091A20C /* ViewController.swift */; };
 		7AB8F18C25F046220091A20C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AB8F18A25F046220091A20C /* Main.storyboard */; };
 		7AB8F18E25F046250091A20C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AB8F18D25F046250091A20C /* Assets.xcassets */; };
 		7AB8F19125F046250091A20C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AB8F18F25F046250091A20C /* LaunchScreen.storyboard */; };
+		7AB8F19C25F0465B0091A20C /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB8F19B25F0465B0091A20C /* CloudKit.framework */; };
+		7AB8F1A025F04BF70091A20C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB8F19F25F04BF70091A20C /* TabBarController.swift */; };
+		7AB8F1A325F04C180091A20C /* PoopsNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB8F1A225F04C180091A20C /* PoopsNavigation.swift */; };
+		7AB8F1A625F04C240091A20C /* ProfileNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB8F1A525F04C240091A20C /* ProfileNavigation.swift */; };
+		7AB8F1A925F04C350091A20C /* PoopsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB8F1A825F04C350091A20C /* PoopsVC.swift */; };
+		7AB8F1AC25F04C3F0091A20C /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB8F1AB25F04C3F0091A20C /* ProfileVC.swift */; };
+		7AB8F1AF25F04C4D0091A20C /* PoopDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB8F1AE25F04C4D0091A20C /* PoopDetailVC.swift */; };
+		7AB8F1B225F04C620091A20C /* PoopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB8F1B125F04C620091A20C /* PoopCell.swift */; };
+		7AB8F1B625F055FF0091A20C /* Poop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB8F1B525F055FF0091A20C /* Poop.swift */; };
+		7AB8F1BB25F057B70091A20C /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB8F1BA25F057B70091A20C /* ModelData.swift */; };
+		7AB8F1C225F072FB0091A20C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB8F1C125F072FB0091A20C /* User.swift */; };
+		7AB8F1C625F07D7B0091A20C /* NewPoopNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB8F1C525F07D7B0091A20C /* NewPoopNavigation.swift */; };
+		7AB8F1C925F07D8C0091A20C /* NewPoopVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB8F1C825F07D8C0091A20C /* NewPoopVC.swift */; };
+		B818D2772CA116C2279CFD25 /* Pods_PooperTrooper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C3D2E8D55E6A44546478685 /* Pods_PooperTrooper.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7AB8F18125F046220091A20C /* PooperTrooper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PooperTrooper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AB8F18425F046220091A20C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AB8F18625F046220091A20C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7AB8F18825F046220091A20C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7AB8F18B25F046220091A20C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7AB8F18D25F046250091A20C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7AB8F19025F046250091A20C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7AB8F19225F046250091A20C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AB8F19925F046550091A20C /* PooperTrooper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PooperTrooper.entitlements; sourceTree = "<group>"; };
+		7AB8F19B25F0465B0091A20C /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		7AB8F19F25F04BF70091A20C /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		7AB8F1A225F04C180091A20C /* PoopsNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoopsNavigation.swift; sourceTree = "<group>"; };
+		7AB8F1A525F04C240091A20C /* ProfileNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileNavigation.swift; sourceTree = "<group>"; };
+		7AB8F1A825F04C350091A20C /* PoopsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoopsVC.swift; sourceTree = "<group>"; };
+		7AB8F1AB25F04C3F0091A20C /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		7AB8F1AE25F04C4D0091A20C /* PoopDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoopDetailVC.swift; sourceTree = "<group>"; };
+		7AB8F1B125F04C620091A20C /* PoopCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoopCell.swift; sourceTree = "<group>"; };
+		7AB8F1B525F055FF0091A20C /* Poop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poop.swift; sourceTree = "<group>"; };
+		7AB8F1BA25F057B70091A20C /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		7AB8F1C125F072FB0091A20C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		7AB8F1C525F07D7B0091A20C /* NewPoopNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPoopNavigation.swift; sourceTree = "<group>"; };
+		7AB8F1C825F07D8C0091A20C /* NewPoopVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPoopVC.swift; sourceTree = "<group>"; };
+		8C3D2E8D55E6A44546478685 /* Pods_PooperTrooper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PooperTrooper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B01114C72433FB8303556F59 /* Pods-PooperTrooper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PooperTrooper.debug.xcconfig"; path = "Target Support Files/Pods-PooperTrooper/Pods-PooperTrooper.debug.xcconfig"; sourceTree = "<group>"; };
+		DA552E133B244A6F111D214C /* Pods-PooperTrooper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PooperTrooper.release.xcconfig"; path = "Target Support Files/Pods-PooperTrooper/Pods-PooperTrooper.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AB8F19C25F0465B0091A20C /* CloudKit.framework in Frameworks */,
+				B818D2772CA116C2279CFD25 /* Pods_PooperTrooper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +73,8 @@
 			children = (
 				7AB8F18325F046220091A20C /* PooperTrooper */,
 				7AB8F18225F046220091A20C /* Products */,
+				7AB8F19A25F0465B0091A20C /* Frameworks */,
+				EA5F388E0D6762E30584FBA8 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +89,54 @@
 		7AB8F18325F046220091A20C /* PooperTrooper */ = {
 			isa = PBXGroup;
 			children = (
+				7AB8F1B425F055F40091A20C /* Model */,
 				7AB8F18425F046220091A20C /* AppDelegate.swift */,
 				7AB8F18625F046220091A20C /* SceneDelegate.swift */,
-				7AB8F18825F046220091A20C /* ViewController.swift */,
+				7AB8F19F25F04BF70091A20C /* TabBarController.swift */,
+				7AB8F1A225F04C180091A20C /* PoopsNavigation.swift */,
+				7AB8F1A825F04C350091A20C /* PoopsVC.swift */,
+				7AB8F1B125F04C620091A20C /* PoopCell.swift */,
+				7AB8F1AE25F04C4D0091A20C /* PoopDetailVC.swift */,
+				7AB8F1C525F07D7B0091A20C /* NewPoopNavigation.swift */,
+				7AB8F1C825F07D8C0091A20C /* NewPoopVC.swift */,
+				7AB8F1A525F04C240091A20C /* ProfileNavigation.swift */,
+				7AB8F1AB25F04C3F0091A20C /* ProfileVC.swift */,
 				7AB8F18A25F046220091A20C /* Main.storyboard */,
 				7AB8F18D25F046250091A20C /* Assets.xcassets */,
 				7AB8F18F25F046250091A20C /* LaunchScreen.storyboard */,
 				7AB8F19225F046250091A20C /* Info.plist */,
+				7AB8F19925F046550091A20C /* PooperTrooper.entitlements */,
 			);
 			path = PooperTrooper;
+			sourceTree = "<group>";
+		};
+		7AB8F19A25F0465B0091A20C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7AB8F19B25F0465B0091A20C /* CloudKit.framework */,
+				8C3D2E8D55E6A44546478685 /* Pods_PooperTrooper.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7AB8F1B425F055F40091A20C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7AB8F1B525F055FF0091A20C /* Poop.swift */,
+				7AB8F1C125F072FB0091A20C /* User.swift */,
+				7AB8F1BA25F057B70091A20C /* ModelData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EA5F388E0D6762E30584FBA8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B01114C72433FB8303556F59 /* Pods-PooperTrooper.debug.xcconfig */,
+				DA552E133B244A6F111D214C /* Pods-PooperTrooper.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +146,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7AB8F19525F046250091A20C /* Build configuration list for PBXNativeTarget "PooperTrooper" */;
 			buildPhases = (
+				4ED56D9388055C1E56F6E08D /* [CP] Check Pods Manifest.lock */,
 				7AB8F17D25F046220091A20C /* Sources */,
 				7AB8F17E25F046220091A20C /* Frameworks */,
 				7AB8F17F25F046220091A20C /* Resources */,
+				49982D16D9D79D1CD9096B27 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -95,6 +169,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
+				ORGANIZATIONNAME = "Tavitian Cloud";
 				TargetAttributes = {
 					7AB8F18025F046220091A20C = {
 						CreatedOnToolsVersion = 12.4;
@@ -132,14 +207,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		49982D16D9D79D1CD9096B27 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PooperTrooper/Pods-PooperTrooper-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PooperTrooper/Pods-PooperTrooper-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PooperTrooper/Pods-PooperTrooper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4ED56D9388055C1E56F6E08D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PooperTrooper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7AB8F17D25F046220091A20C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AB8F18925F046220091A20C /* ViewController.swift in Sources */,
+				7AB8F1B225F04C620091A20C /* PoopCell.swift in Sources */,
+				7AB8F1A625F04C240091A20C /* ProfileNavigation.swift in Sources */,
+				7AB8F1A025F04BF70091A20C /* TabBarController.swift in Sources */,
+				7AB8F1AC25F04C3F0091A20C /* ProfileVC.swift in Sources */,
+				7AB8F1A325F04C180091A20C /* PoopsNavigation.swift in Sources */,
 				7AB8F18525F046220091A20C /* AppDelegate.swift in Sources */,
+				7AB8F1A925F04C350091A20C /* PoopsVC.swift in Sources */,
+				7AB8F1BB25F057B70091A20C /* ModelData.swift in Sources */,
+				7AB8F1C225F072FB0091A20C /* User.swift in Sources */,
 				7AB8F18725F046220091A20C /* SceneDelegate.swift in Sources */,
+				7AB8F1AF25F04C4D0091A20C /* PoopDetailVC.swift in Sources */,
+				7AB8F1C925F07D8C0091A20C /* NewPoopVC.swift in Sources */,
+				7AB8F1C625F07D7B0091A20C /* NewPoopNavigation.swift in Sources */,
+				7AB8F1B625F055FF0091A20C /* Poop.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,9 +411,11 @@
 		};
 		7AB8F19625F046250091A20C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B01114C72433FB8303556F59 /* Pods-PooperTrooper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PooperTrooper/PooperTrooper.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JDL5FY6SCC;
 				INFOPLIST_FILE = PooperTrooper/Info.plist;
@@ -293,7 +423,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = cloud.tavitian.PooperTrooper;
+				PRODUCT_BUNDLE_IDENTIFIER = cloud.tavitian.poopertrooper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -302,9 +432,11 @@
 		};
 		7AB8F19725F046250091A20C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA552E133B244A6F111D214C /* Pods-PooperTrooper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PooperTrooper/PooperTrooper.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JDL5FY6SCC;
 				INFOPLIST_FILE = PooperTrooper/Info.plist;
@@ -312,7 +444,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = cloud.tavitian.PooperTrooper;
+				PRODUCT_BUNDLE_IDENTIFIER = cloud.tavitian.poopertrooper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
