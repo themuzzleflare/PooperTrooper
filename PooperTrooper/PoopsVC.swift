@@ -49,9 +49,7 @@ class PoopsVC: UITableViewController {
                 if let error = operationError {
                     print(error.localizedDescription)
                 } else {
-                    DispatchQueue.main.async {
-                        self.fetchPoops()
-                    }
+                    self.fetchPoops()
                 }
             }
             database.add(operation)

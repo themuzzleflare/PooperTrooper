@@ -82,10 +82,10 @@
                                                             <color key="textColor" systemColor="secondaryLabelColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="e.g Home" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kon-qf-i05">
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Home" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Kon-qf-i05">
                                                             <rect key="frame" x="198" y="0.0" width="198" height="17.666666666666668"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                            <textInputTraits key="textInputTraits"/>
+                                                            <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                         </textField>
                                                     </subviews>
                                                 </stackView>
@@ -114,10 +114,10 @@
                                                             <color key="textColor" systemColor="secondaryLabelColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KlN-uw-gwB">
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Solid dump :)" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="KlN-uw-gwB">
                                                             <rect key="frame" x="198" y="0.0" width="198" height="17.666666666666668"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                            <textInputTraits key="textInputTraits"/>
+                                                            <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                         </textField>
                                                     </subviews>
                                                 </stackView>
@@ -191,6 +191,7 @@
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2NM-a7-S3n">
                                                             <rect key="frame" x="198" y="0.0" width="198" height="24"/>
                                                             <state key="normal" title="Choose"/>
+                                                            <state key="selected" title="Selected"/>
                                                             <connections>
                                                                 <action selector="chooseImageAction:" destination="AZm-i4-8ZI" eventType="touchDown" id="e3j-aM-Vpq"/>
                                                             </connections>
@@ -220,17 +221,19 @@
                                 <action selector="dismissAction:" destination="AZm-i4-8ZI" id="xPE-yg-uK4"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="dMD-eh-ybl">
+                        <barButtonItem key="rightBarButtonItem" title="Submit" style="done" id="dMD-eh-ybl">
                             <connections>
                                 <action selector="submitAction:" destination="AZm-i4-8ZI" id="KBR-3G-QN4"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="chooseButton" destination="2NM-a7-S3n" id="d5r-QL-6gr"/>
                         <outlet property="recordComment" destination="KlN-uw-gwB" id="Azh-8h-rpL"/>
                         <outlet property="recordDate" destination="yu1-3x-LzC" id="H5o-cj-zhV"/>
                         <outlet property="recordPlace" destination="Kon-qf-i05" id="46a-CE-LEf"/>
                         <outlet property="recordRating" destination="Mcf-kb-qPF" id="ypP-zO-2J3"/>
+                        <outlet property="submitButton" destination="dMD-eh-ybl" id="pHO-6y-vma"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mzQ-xo-ltj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

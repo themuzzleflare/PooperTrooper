@@ -7,6 +7,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         lm.delegate = self
+        
         if lm.authorizationStatus == .denied || lm.authorizationStatus == .notDetermined || lm.authorizationStatus == .restricted {
             lm.requestAlwaysAuthorization()
         }
