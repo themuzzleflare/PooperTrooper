@@ -32,9 +32,9 @@ class PoopsVC: UITableViewController {
         
         let poop = modelData.poops[indexPath.row]
         
-        cell.leftImage.image = poop.selfie
-        cell.topLabel.text = poop.place
-        cell.bottomSubtitle.text = poop.comment
+        cell.poopSelfie.image = poop.selfie
+        cell.poopPlace.text = poop.place
+        cell.poopComment.text = poop.comment
         
         return cell
     }
@@ -42,17 +42,17 @@ class PoopsVC: UITableViewController {
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         let poop = modelData.poops[indexPath.row]
         
-            let database = CKContainer.default().privateCloudDatabase
-            let operation = CKModifyRecordsOperation(recordIDsToDelete: [poop.recordID!])
-            
-            operation.modifyRecordsCompletionBlock = { savedRecords, deletedRecordIDs, operationError in
-                if let error = operationError {
-                    print(error.localizedDescription)
-                } else {
-                    self.fetchPoops()
-                }
+        let database = CKContainer.default().privateCloudDatabase
+        let operation = CKModifyRecordsOperation(recordIDsToDelete: [poop.recordID!])
+        
+        operation.modifyRecordsCompletionBlock = { savedRecords, deletedRecordIDs, operationError in
+            if let error = operationError {
+                print(error.localizedDescription)
+            } else {
+                self.fetchPoops()
             }
-            database.add(operation)
+        }
+        database.add(operation)
     }
     
     private func fetchPoops() {

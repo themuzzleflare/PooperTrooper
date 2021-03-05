@@ -1,9 +1,9 @@
 import UIKit
 
 class PoopCell: UITableViewCell {
-    @IBOutlet var leftImage: UIImageView!
-    @IBOutlet var topLabel: UILabel!
-    @IBOutlet var bottomSubtitle: UILabel!
+    @IBOutlet var poopSelfie: UIImageView!
+    @IBOutlet var poopPlace: UILabel!
+    @IBOutlet var poopComment: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

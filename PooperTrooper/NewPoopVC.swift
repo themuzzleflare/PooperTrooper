@@ -54,6 +54,7 @@ class NewPoopVC: UITableViewController, UIImagePickerControllerDelegate, UINavig
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         ipc.dismiss(animated: true)
+        
         if ipc.sourceType == .photoLibrary {
             let image = info[.imageURL] as! URL
             self.selectedSelfie = image

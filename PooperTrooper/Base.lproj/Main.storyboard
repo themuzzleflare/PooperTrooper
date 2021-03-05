@@ -269,14 +269,14 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="soZ-MX-Jh9">
                                                     <rect key="frame" x="63" y="7" width="301.66666666666669" height="34.666666666666664"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ald-Gp-Z3y">
-                                                            <rect key="frame" x="0.0" y="0.0" width="44.333333333333336" height="20.333333333333332"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Place" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ald-Gp-Z3y">
+                                                            <rect key="frame" x="0.0" y="0.0" width="44.666666666666664" height="20.333333333333332"/>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zOX-Pw-ftS">
-                                                            <rect key="frame" x="0.0" y="20.333333333333336" width="31" height="14.333333333333336"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comment" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zOX-Pw-ftS">
+                                                            <rect key="frame" x="0.0" y="20.333333333333336" width="55" height="14.333333333333336"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                                             <color key="textColor" systemColor="secondaryLabelColor"/>
                                                             <nil key="highlightedColor"/>
@@ -298,9 +298,9 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="bottomSubtitle" destination="zOX-Pw-ftS" id="Bmb-rb-jvg"/>
-                                    <outlet property="leftImage" destination="XAT-WW-j9M" id="V9g-eP-kUz"/>
-                                    <outlet property="topLabel" destination="ald-Gp-Z3y" id="fhB-HG-8Kv"/>
+                                    <outlet property="poopComment" destination="zOX-Pw-ftS" id="xDz-rU-vC9"/>
+                                    <outlet property="poopPlace" destination="ald-Gp-Z3y" id="J81-ml-Ejp"/>
+                                    <outlet property="poopSelfie" destination="XAT-WW-j9M" id="axB-7e-eFh"/>
                                     <segue destination="fcr-dk-t8k" kind="show" identifier="showPoopDetail" id="d5k-nt-J1E"/>
                                 </connections>
                             </tableViewCell>
@@ -311,6 +311,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Poops" id="nUA-hx-2Nl">
+                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="5q6-LC-eJG"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Ub3-tZ-EL8">
                             <connections>
                                 <segue destination="1qO-29-8zw" kind="presentation" identifier="newPoop" id="hn1-Xz-j8E"/>
