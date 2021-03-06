@@ -1,5 +1,6 @@
 import UIKit
 import MapKit
+import Cosmos
 
 class PoopDetailVC: UITableViewController {
     var poop: Poop!
@@ -10,7 +11,7 @@ class PoopDetailVC: UITableViewController {
     @IBOutlet var poopDateAndTime: UILabel!
     @IBOutlet var poopPlace: UILabel!
     @IBOutlet var poopComment: UILabel!
-    @IBOutlet var poopRating: UILabel!
+    @IBOutlet var poopRating: CosmosView!
     
     @IBOutlet var poopLocation: MKMapView!
     
@@ -25,7 +26,7 @@ class PoopDetailVC: UITableViewController {
         poopDateAndTime.text = poop.dateAndTime
         poopPlace.text = poop.place
         poopComment.text = poop.comment
-        poopRating.text = poop.rating
+        poopRating.rating = Double(poop.ratingRaw)
         
         poopLocation.region = poop.location
     }

@@ -5,7 +5,7 @@ import CoreLocation
 
 class NewPoopVC: UITableViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, CLLocationManagerDelegate {
     let ipc = UIImagePickerController()
-    
+        
     let lm = CLLocationManager()
     
     var selectedSelfie: URL?
@@ -13,7 +13,7 @@ class NewPoopVC: UITableViewController, UIImagePickerControllerDelegate, UINavig
     @IBOutlet var submitButton: UIBarButtonItem!
     @IBOutlet var chooseButton: UIButton!
     
-    @IBOutlet var recordDate: UIDatePicker!
+    @IBOutlet var recordDateAndTime: UIDatePicker!
     @IBOutlet var recordPlace: UITextField!
     @IBOutlet var recordComment: UITextField!
     @IBOutlet var recordRating: CosmosView!
@@ -93,7 +93,7 @@ class NewPoopVC: UITableViewController, UIImagePickerControllerDelegate, UINavig
             }
             let database = CKContainer.default().privateCloudDatabase
             let record = CKRecord(recordType: "Poops")
-            record.setValue(recordDate.date, forKey: "dateAndTime")
+            record.setValue(recordDateAndTime.date, forKey: "dateAndTime")
             record.setValue(recordPlace.text, forKey: "place")
             record.setValue(recordComment.text, forKey: "comment")
             record.setValue(Int64(recordRating.rating), forKey: "rating")

@@ -7,5 +7,6 @@ target 'PooperTrooper' do
 
   # Pods for PooperTrooper
   pod 'Cosmos', '~> 23.0'
+  pod "TinyConstraints"
 
 end
