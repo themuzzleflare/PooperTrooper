@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A30EDBD25F37E9200F4B6B8 /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A30EDBC25F37E9200F4B6B8 /* AboutVC.swift */; };
+		7A30EDC025F37EA000F4B6B8 /* AboutNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A30EDBF25F37EA000F4B6B8 /* AboutNavigation.swift */; };
+		7A30EDC425F3818F00F4B6B8 /* SettingsNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A30EDC325F3818F00F4B6B8 /* SettingsNavigation.swift */; };
+		7A30EDC725F3819A00F4B6B8 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A30EDC625F3819A00F4B6B8 /* SettingsVC.swift */; };
 		7AB8F18525F046220091A20C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB8F18425F046220091A20C /* AppDelegate.swift */; };
 		7AB8F18725F046220091A20C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB8F18625F046220091A20C /* SceneDelegate.swift */; };
 		7AB8F18C25F046220091A20C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AB8F18A25F046220091A20C /* Main.storyboard */; };
@@ -29,6 +33,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7A30EDBC25F37E9200F4B6B8 /* AboutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
+		7A30EDBF25F37EA000F4B6B8 /* AboutNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutNavigation.swift; sourceTree = "<group>"; };
+		7A30EDC325F3818F00F4B6B8 /* SettingsNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsNavigation.swift; sourceTree = "<group>"; };
+		7A30EDC625F3819A00F4B6B8 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		7AB8F18125F046220091A20C /* PooperTrooper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PooperTrooper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AB8F18425F046220091A20C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AB8F18625F046220091A20C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +109,10 @@
 				7AB8F1C825F07D8C0091A20C /* NewPoopVC.swift */,
 				7AB8F1A525F04C240091A20C /* ProfileNavigation.swift */,
 				7AB8F1AB25F04C3F0091A20C /* ProfileVC.swift */,
+				7A30EDBF25F37EA000F4B6B8 /* AboutNavigation.swift */,
+				7A30EDBC25F37E9200F4B6B8 /* AboutVC.swift */,
+				7A30EDC325F3818F00F4B6B8 /* SettingsNavigation.swift */,
+				7A30EDC625F3819A00F4B6B8 /* SettingsVC.swift */,
 				7AB8F18A25F046220091A20C /* Main.storyboard */,
 				7AB8F18D25F046250091A20C /* Assets.xcassets */,
 				7AB8F18F25F046250091A20C /* LaunchScreen.storyboard */,
@@ -254,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AB8F1B225F04C620091A20C /* PoopCell.swift in Sources */,
+				7A30EDC425F3818F00F4B6B8 /* SettingsNavigation.swift in Sources */,
 				7AB8F1A625F04C240091A20C /* ProfileNavigation.swift in Sources */,
 				7AB8F1A025F04BF70091A20C /* TabBarController.swift in Sources */,
 				7AB8F1AC25F04C3F0091A20C /* ProfileVC.swift in Sources */,
@@ -264,9 +277,12 @@
 				7AB8F1C225F072FB0091A20C /* User.swift in Sources */,
 				7AB8F18725F046220091A20C /* SceneDelegate.swift in Sources */,
 				7AB8F1AF25F04C4D0091A20C /* PoopDetailVC.swift in Sources */,
+				7A30EDC025F37EA000F4B6B8 /* AboutNavigation.swift in Sources */,
+				7A30EDBD25F37E9200F4B6B8 /* AboutVC.swift in Sources */,
 				7AB8F1C925F07D8C0091A20C /* NewPoopVC.swift in Sources */,
 				7AB8F1C625F07D7B0091A20C /* NewPoopNavigation.swift in Sources */,
 				7AB8F1B625F055FF0091A20C /* Poop.swift in Sources */,
+				7A30EDC725F3819A00F4B6B8 /* SettingsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,7 +438,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.4;
+				MARKETING_VERSION = 1.5;
 				OTHER_CODE_SIGN_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = cloud.tavitian.poopertrooper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -445,7 +461,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.4;
+				MARKETING_VERSION = 1.5;
 				OTHER_CODE_SIGN_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = cloud.tavitian.poopertrooper;
 				PRODUCT_NAME = "$(TARGET_NAME)";

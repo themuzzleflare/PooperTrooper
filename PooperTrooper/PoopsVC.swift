@@ -83,13 +83,13 @@ class PoopsVC: UITableViewController {
         operation.queryCompletionBlock = { (cursor, error) in
             DispatchQueue.main.async {
                 if let error = error {
-                    self.tableView.reloadSections(IndexSet(integer: 0), with: .automatic)
                     self.refreshControl?.endRefreshing()
+                    self.tableView.reloadData()
                     print(error.localizedDescription)
                 } else {
                     self.modelData.poops = newPoops
-                    self.tableView.reloadSections(IndexSet(integer: 0), with: .automatic)
                     self.refreshControl?.endRefreshing()
+                    self.tableView.reloadData()
                 }
             }
         }
