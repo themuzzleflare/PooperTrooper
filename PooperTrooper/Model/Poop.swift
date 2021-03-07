@@ -14,7 +14,7 @@ struct Poop: Hashable, Identifiable {
             longitude: locationRaw?.coordinate.longitude ?? 0)
     }
     var location: MKCoordinateRegion {
-        return MKCoordinateRegion(center: locationCoordinate, span: MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta: 0.02))
+        return MKCoordinateRegion(center: locationCoordinate, span: MKCoordinateSpan(latitudeDelta: delta, longitudeDelta: delta))
     }
     
     var place: String = ""

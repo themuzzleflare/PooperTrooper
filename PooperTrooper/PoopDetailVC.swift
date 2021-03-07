@@ -26,9 +26,12 @@ class PoopDetailVC: UITableViewController {
         poopDateAndTime.text = poop.dateAndTime
         poopPlace.text = poop.place
         poopComment.text = poop.comment
-        poopRating.rating = Double(poop.ratingRaw)
-        
+        poopRating.rating = Double(poop.ratingRaw)        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         poopLocation.region = poop.location
+        self.tableView.reloadData()
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
