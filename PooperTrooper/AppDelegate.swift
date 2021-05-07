@@ -19,9 +19,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
                 })
             }
         })
-        if UserDefaults.standard.string(forKey: "mapZoom") == nil {
-            UserDefaults.standard.setValue("Near", forKey: "mapZoom")
-        }
         return true
     }
     
