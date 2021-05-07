@@ -27,9 +27,6 @@ extension UserDefaults {
     }
 }
 
-let appName = Bundle.main.infoDictionary?["CFBundleDisplayName"] as? String ?? Bundle.main.infoDictionary?["CFBundleName"] as? String ?? "PooperTrooper"
-let appCopyright = Bundle.main.infoDictionary?["NSHumanReadableCopyright"] as? String ?? "Copyright © 2021 Paul Tavitian"
-
 var delta: CLLocationDegrees {
     switch UserDefaults.standard.mapZoom {
         case "Near": return 0.02
