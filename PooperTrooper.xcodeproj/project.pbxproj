@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A08669A26452AB8009955A9 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7A08669926452AB7009955A9 /* Settings.bundle */; };
+		7A08669C26452CAC009955A9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB8F1C125F072FB0091A20C /* User.swift */; };
 		7A30EDBD25F37E9200F4B6B8 /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A30EDBC25F37E9200F4B6B8 /* AboutVC.swift */; };
-		7A30EDC025F37EA000F4B6B8 /* AboutNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A30EDBF25F37EA000F4B6B8 /* AboutNavigation.swift */; };
-		7A30EDC425F3818F00F4B6B8 /* SettingsNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A30EDC325F3818F00F4B6B8 /* SettingsNavigation.swift */; };
 		7A30EDC725F3819A00F4B6B8 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A30EDC625F3819A00F4B6B8 /* SettingsVC.swift */; };
 		7AB8F18525F046220091A20C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB8F18425F046220091A20C /* AppDelegate.swift */; };
 		7AB8F18725F046220091A20C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB8F18625F046220091A20C /* SceneDelegate.swift */; };
@@ -18,24 +18,20 @@
 		7AB8F19125F046250091A20C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AB8F18F25F046250091A20C /* LaunchScreen.storyboard */; };
 		7AB8F19C25F0465B0091A20C /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB8F19B25F0465B0091A20C /* CloudKit.framework */; };
 		7AB8F1A025F04BF70091A20C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB8F19F25F04BF70091A20C /* TabBarController.swift */; };
-		7AB8F1A325F04C180091A20C /* PoopsNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB8F1A225F04C180091A20C /* PoopsNavigation.swift */; };
-		7AB8F1A625F04C240091A20C /* ProfileNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB8F1A525F04C240091A20C /* ProfileNavigation.swift */; };
+		7AB8F1A325F04C180091A20C /* NavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB8F1A225F04C180091A20C /* NavController.swift */; };
 		7AB8F1A925F04C350091A20C /* PoopsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB8F1A825F04C350091A20C /* PoopsVC.swift */; };
 		7AB8F1AC25F04C3F0091A20C /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB8F1AB25F04C3F0091A20C /* ProfileVC.swift */; };
 		7AB8F1AF25F04C4D0091A20C /* PoopDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB8F1AE25F04C4D0091A20C /* PoopDetailVC.swift */; };
 		7AB8F1B225F04C620091A20C /* PoopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB8F1B125F04C620091A20C /* PoopCell.swift */; };
 		7AB8F1B625F055FF0091A20C /* Poop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB8F1B525F055FF0091A20C /* Poop.swift */; };
 		7AB8F1BB25F057B70091A20C /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB8F1BA25F057B70091A20C /* ModelData.swift */; };
-		7AB8F1C225F072FB0091A20C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB8F1C125F072FB0091A20C /* User.swift */; };
-		7AB8F1C625F07D7B0091A20C /* NewPoopNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB8F1C525F07D7B0091A20C /* NewPoopNavigation.swift */; };
 		7AB8F1C925F07D8C0091A20C /* NewPoopVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB8F1C825F07D8C0091A20C /* NewPoopVC.swift */; };
 		B818D2772CA116C2279CFD25 /* Pods_PooperTrooper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C3D2E8D55E6A44546478685 /* Pods_PooperTrooper.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7A08669926452AB7009955A9 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		7A30EDBC25F37E9200F4B6B8 /* AboutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
-		7A30EDBF25F37EA000F4B6B8 /* AboutNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutNavigation.swift; sourceTree = "<group>"; };
-		7A30EDC325F3818F00F4B6B8 /* SettingsNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsNavigation.swift; sourceTree = "<group>"; };
 		7A30EDC625F3819A00F4B6B8 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		7AB8F18125F046220091A20C /* PooperTrooper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PooperTrooper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AB8F18425F046220091A20C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,8 +43,7 @@
 		7AB8F19925F046550091A20C /* PooperTrooper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PooperTrooper.entitlements; sourceTree = "<group>"; };
 		7AB8F19B25F0465B0091A20C /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		7AB8F19F25F04BF70091A20C /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
-		7AB8F1A225F04C180091A20C /* PoopsNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoopsNavigation.swift; sourceTree = "<group>"; };
-		7AB8F1A525F04C240091A20C /* ProfileNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileNavigation.swift; sourceTree = "<group>"; };
+		7AB8F1A225F04C180091A20C /* NavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavController.swift; sourceTree = "<group>"; };
 		7AB8F1A825F04C350091A20C /* PoopsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoopsVC.swift; sourceTree = "<group>"; };
 		7AB8F1AB25F04C3F0091A20C /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		7AB8F1AE25F04C4D0091A20C /* PoopDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoopDetailVC.swift; sourceTree = "<group>"; };
@@ -56,7 +51,6 @@
 		7AB8F1B525F055FF0091A20C /* Poop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poop.swift; sourceTree = "<group>"; };
 		7AB8F1BA25F057B70091A20C /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		7AB8F1C125F072FB0091A20C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		7AB8F1C525F07D7B0091A20C /* NewPoopNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPoopNavigation.swift; sourceTree = "<group>"; };
 		7AB8F1C825F07D8C0091A20C /* NewPoopVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPoopVC.swift; sourceTree = "<group>"; };
 		8C3D2E8D55E6A44546478685 /* Pods_PooperTrooper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PooperTrooper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B01114C72433FB8303556F59 /* Pods-PooperTrooper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PooperTrooper.debug.xcconfig"; path = "Target Support Files/Pods-PooperTrooper/Pods-PooperTrooper.debug.xcconfig"; sourceTree = "<group>"; };
@@ -101,23 +95,20 @@
 				7AB8F18425F046220091A20C /* AppDelegate.swift */,
 				7AB8F18625F046220091A20C /* SceneDelegate.swift */,
 				7AB8F19F25F04BF70091A20C /* TabBarController.swift */,
-				7AB8F1A225F04C180091A20C /* PoopsNavigation.swift */,
+				7AB8F1A225F04C180091A20C /* NavController.swift */,
 				7AB8F1A825F04C350091A20C /* PoopsVC.swift */,
 				7AB8F1B125F04C620091A20C /* PoopCell.swift */,
 				7AB8F1AE25F04C4D0091A20C /* PoopDetailVC.swift */,
-				7AB8F1C525F07D7B0091A20C /* NewPoopNavigation.swift */,
 				7AB8F1C825F07D8C0091A20C /* NewPoopVC.swift */,
-				7AB8F1A525F04C240091A20C /* ProfileNavigation.swift */,
 				7AB8F1AB25F04C3F0091A20C /* ProfileVC.swift */,
-				7A30EDBF25F37EA000F4B6B8 /* AboutNavigation.swift */,
 				7A30EDBC25F37E9200F4B6B8 /* AboutVC.swift */,
-				7A30EDC325F3818F00F4B6B8 /* SettingsNavigation.swift */,
 				7A30EDC625F3819A00F4B6B8 /* SettingsVC.swift */,
 				7AB8F18A25F046220091A20C /* Main.storyboard */,
 				7AB8F18D25F046250091A20C /* Assets.xcassets */,
 				7AB8F18F25F046250091A20C /* LaunchScreen.storyboard */,
 				7AB8F19225F046250091A20C /* Info.plist */,
 				7AB8F19925F046550091A20C /* PooperTrooper.entitlements */,
+				7A08669926452AB7009955A9 /* Settings.bundle */,
 			);
 			path = PooperTrooper;
 			sourceTree = "<group>";
@@ -162,6 +153,7 @@
 				7AB8F17E25F046220091A20C /* Frameworks */,
 				7AB8F17F25F046220091A20C /* Resources */,
 				49982D16D9D79D1CD9096B27 /* [CP] Embed Pods Frameworks */,
+				7A08669B26452B51009955A9 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -210,6 +202,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A08669A26452AB8009955A9 /* Settings.bundle in Resources */,
 				7AB8F19125F046250091A20C /* LaunchScreen.storyboard in Resources */,
 				7AB8F18E25F046250091A20C /* Assets.xcassets in Resources */,
 				7AB8F18C25F046220091A20C /* Main.storyboard in Resources */,
@@ -258,6 +251,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		7A08669B26452B51009955A9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "PLISTBUDDY=\"/usr/libexec/PlistBuddy\"\nINFO_PLIST=\"$CODESIGNING_FOLDER_PATH/Info.plist\"\nSETTINGS_PLIST=\"$CODESIGNING_FOLDER_PATH/Settings.bundle/Root.plist\"\nCOPYRIGHT_VALUE=\"`$PLISTBUDDY -c \\\"Print NSHumanReadableCopyright\\\" \\\"$INFO_PLIST\\\"`\"\nVERSION_NUMBER=\"`$PLISTBUDDY -c \\\"Print CFBundleShortVersionString\\\" \\\"$INFO_PLIST\\\"`\"\nBUILD_NUMBER=\"`$PLISTBUDDY -c \\\"Print CFBundleVersion\\\" \\\"$INFO_PLIST\\\"`\"\nCOPYRIGHT=\"$COPYRIGHT_VALUE\"\nVERSION=\"$VERSION_NUMBER\"\nBUILD=\"$BUILD_NUMBER\"\n\n$PLISTBUDDY -c \"Set :PreferenceSpecifiers:1:FooterText '$COPYRIGHT'\" \"$SETTINGS_PLIST\"\n$PLISTBUDDY -c \"Set :PreferenceSpecifiers:2:DefaultValue '$VERSION'\" \"$SETTINGS_PLIST\"\n$PLISTBUDDY -c \"Set :PreferenceSpecifiers:3:DefaultValue '$BUILD'\" \"$SETTINGS_PLIST\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -266,21 +276,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AB8F1B225F04C620091A20C /* PoopCell.swift in Sources */,
-				7A30EDC425F3818F00F4B6B8 /* SettingsNavigation.swift in Sources */,
-				7AB8F1A625F04C240091A20C /* ProfileNavigation.swift in Sources */,
 				7AB8F1A025F04BF70091A20C /* TabBarController.swift in Sources */,
 				7AB8F1AC25F04C3F0091A20C /* ProfileVC.swift in Sources */,
-				7AB8F1A325F04C180091A20C /* PoopsNavigation.swift in Sources */,
+				7AB8F1A325F04C180091A20C /* NavController.swift in Sources */,
 				7AB8F18525F046220091A20C /* AppDelegate.swift in Sources */,
 				7AB8F1A925F04C350091A20C /* PoopsVC.swift in Sources */,
 				7AB8F1BB25F057B70091A20C /* ModelData.swift in Sources */,
-				7AB8F1C225F072FB0091A20C /* User.swift in Sources */,
 				7AB8F18725F046220091A20C /* SceneDelegate.swift in Sources */,
 				7AB8F1AF25F04C4D0091A20C /* PoopDetailVC.swift in Sources */,
-				7A30EDC025F37EA000F4B6B8 /* AboutNavigation.swift in Sources */,
 				7A30EDBD25F37E9200F4B6B8 /* AboutVC.swift in Sources */,
 				7AB8F1C925F07D8C0091A20C /* NewPoopVC.swift in Sources */,
-				7AB8F1C625F07D7B0091A20C /* NewPoopNavigation.swift in Sources */,
+				7A08669C26452CAC009955A9 /* User.swift in Sources */,
 				7AB8F1B625F055FF0091A20C /* Poop.swift in Sources */,
 				7A30EDC725F3819A00F4B6B8 /* SettingsVC.swift in Sources */,
 			);
@@ -359,7 +365,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -414,7 +420,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -429,7 +435,7 @@
 			baseConfigurationReference = B01114C72433FB8303556F59 /* Pods-PooperTrooper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColour;
 				CODE_SIGN_ENTITLEMENTS = PooperTrooper/PooperTrooper.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JDL5FY6SCC;
@@ -438,7 +444,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.6;
+				MARKETING_VERSION = 1.7;
 				OTHER_CODE_SIGN_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = cloud.tavitian.poopertrooper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -452,7 +458,7 @@
 			baseConfigurationReference = DA552E133B244A6F111D214C /* Pods-PooperTrooper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColour;
 				CODE_SIGN_ENTITLEMENTS = PooperTrooper/PooperTrooper.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JDL5FY6SCC;
@@ -461,7 +467,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.6;
+				MARKETING_VERSION = 1.7;
 				OTHER_CODE_SIGN_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = cloud.tavitian.poopertrooper;
 				PRODUCT_NAME = "$(TARGET_NAME)";

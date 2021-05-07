@@ -6,7 +6,6 @@ import UIKit
 struct Poop: Hashable, Identifiable {
     var id = UUID()
     var recordID: CKRecord.ID?
-    
     var locationRaw: CLLocation?
     var locationCoordinate: CLLocationCoordinate2D {
         CLLocationCoordinate2D(
@@ -16,15 +15,12 @@ struct Poop: Hashable, Identifiable {
     var location: MKCoordinateRegion {
         return MKCoordinateRegion(center: locationCoordinate, span: MKCoordinateSpan(latitudeDelta: delta, longitudeDelta: delta))
     }
-    
     var place: String = ""
     var comment: String = ""
-    
     var ratingRaw: Int64 = 0
     var rating: String {
         return "\(ratingRaw.description)/5"
     }
-    
     var dateAndTimeRaw: Date?
     var dateAndTime: String {
         if let date = dateAndTimeRaw {
@@ -37,11 +33,9 @@ struct Poop: Hashable, Identifiable {
             return "Unknown"
         }
     }
-    
     var selfieRaw: CKAsset?
     var selfie: UIImage {
         let noImage = UIImage(systemName: "square")!
-        
         if let url = selfieRaw?.fileURL {
             if let data = try? Data(contentsOf: url) {
                 if let uiIcon = UIImage(data: data) {

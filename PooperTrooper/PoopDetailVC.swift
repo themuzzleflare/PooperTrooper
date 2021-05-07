@@ -5,24 +5,19 @@ import Cosmos
 class PoopDetailVC: UITableViewController {
     var poop: Poop!
     
-    @IBOutlet var poopSelfie: UIImageView!
-    @IBOutlet var poopTopPlace: UILabel!
-    
-    @IBOutlet var poopDateAndTime: UILabel!
-    @IBOutlet var poopPlace: UILabel!
-    @IBOutlet var poopComment: UILabel!
-    @IBOutlet var poopRating: CosmosView!
-    
-    @IBOutlet var poopLocation: MKMapView!
+    @IBOutlet weak var poopSelfie: UIImageView!
+    @IBOutlet weak var poopTopPlace: UILabel!
+    @IBOutlet weak var poopDateAndTime: UILabel!
+    @IBOutlet weak var poopPlace: UILabel!
+    @IBOutlet weak var poopComment: UILabel!
+    @IBOutlet weak var poopRating: CosmosView!
+    @IBOutlet weak var poopLocation: MKMapView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.navigationItem.title = poop.place
-        
+        navigationItem.title = poop.place
         poopSelfie.image = poop.selfie
         poopTopPlace.text = poop.place
-        
         poopDateAndTime.text = poop.dateAndTime
         poopPlace.text = poop.place
         poopComment.text = poop.comment
@@ -31,7 +26,7 @@ class PoopDetailVC: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         poopLocation.region = poop.location
-        self.tableView.reloadData()
+        tableView.reloadData()
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

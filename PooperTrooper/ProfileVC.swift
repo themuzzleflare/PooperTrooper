@@ -2,22 +2,22 @@ import UIKit
 import CloudKit
 
 class ProfileVC: UITableViewController {
-    var modelData = ModelData()
+    private var modelData = ModelData()
     
-    @IBOutlet var profileUsername: UILabel!
-    @IBOutlet var profileUsernameLoadingIndicator: UIActivityIndicatorView!
-    @IBOutlet var profilePhoto: UIImageView!
+    @IBOutlet weak var profileUsername: UILabel!
+    @IBOutlet weak var profileUsernameLoadingIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var profilePhoto: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.fetchProfile()
+        fetchProfile()
     }
-    
+}
+
+extension ProfileVC {
     private func fetchProfile() {
         let database = CKContainer.default().publicCloudDatabase
         let operation = CKFetchRecordsOperation(recordIDs: [CKRecord.ID(recordName: CKCurrentUserDefaultName)])
-        
         operation.perRecordCompletionBlock = { record, recordID, error in
             if let error = error {
                 print(error.localizedDescription)
@@ -25,7 +25,6 @@ class ProfileVC: UITableViewController {
                 self.modelData.user = User(recordID: recordID, username: record?["username"] as? String ?? "", profilePhotoRaw: record?["profilePhoto"] as! CKAsset?)
             }
         }
-        
         operation.fetchRecordsCompletionBlock = { recordsByRecordID, operationError in
             if let error = operationError {
                 print(error.localizedDescription)
@@ -38,6 +37,6 @@ class ProfileVC: UITableViewController {
                 }
             }
         }
-        database.add(operation)        
+        database.add(operation)
     }
 }

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ao3-CT-ogg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ao3-CT-ogg">
     <device id="retina5_5" orientation="portrait" appearance="dark"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -51,7 +51,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="qeT-CE-tjj">
-                                                    <rect key="frame" x="186" y="13" width="212" height="54"/>
+                                                    <rect key="frame" x="186" y="13" width="215.66666666666663" height="54"/>
                                                     <locale key="locale" localeIdentifier="en_AU"/>
                                                 </datePicker>
                                             </subviews>
@@ -145,7 +145,7 @@
                                                             <color key="textColor" systemColor="secondaryLabelColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mcf-kb-qPF" customClass="CosmosView" customModule="Cosmos">
+                                                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mcf-kb-qPF" customClass="CosmosView" customModule="Cosmos">
                                                             <rect key="frame" x="237" y="0.0" width="145" height="24"/>
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <userDefinedRuntimeAttributes>
@@ -215,9 +215,10 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="New Poop" id="DBv-WZ-9r1">
-                        <barButtonItem key="leftBarButtonItem" title="Close" id="soi-xZ-uW6">
+                        <barButtonItem key="leftBarButtonItem" title="Close" image="xmark.circle.fill" catalog="system" id="soi-xZ-uW6">
+                            <color key="tintColor" systemColor="systemGrayColor"/>
                             <connections>
-                                <action selector="dismissAction:" destination="AZm-i4-8ZI" id="xPE-yg-uK4"/>
+                                <segue destination="Bm0-Rp-qou" kind="unwind" identifier="closeAddPoop" unwindAction="addPoopClosedWithUnwindSegue:" id="7h6-8H-ASl"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Submit" style="done" id="dMD-eh-ybl">
@@ -249,14 +250,14 @@
                         <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="poopCell" id="fkU-ge-ECf" customClass="PoopCell" customModule="PooperTrooper" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="55.333332061767578" width="414" height="74.333335876464844"/>
+                                <rect key="frame" x="0.0" y="49" width="414" height="74.333335876464844"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fkU-ge-ECf" id="Uh1-IG-h9S">
-                                    <rect key="frame" x="0.0" y="0.0" width="382.66666666666669" height="74.333335876464844"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="384.33333333333331" height="74.333335876464844"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="pHL-N5-ate">
-                                            <rect key="frame" x="16" y="13.000000000000004" width="350.66666666666669" height="48.333333333333343"/>
+                                            <rect key="frame" x="16" y="13.000000000000004" width="352.33333333333331" height="48.333333333333343"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XAT-WW-j9M">
                                                     <rect key="frame" x="0.0" y="0.3333333333333357" width="48" height="48"/>
@@ -266,16 +267,16 @@
                                                     </constraints>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="soZ-MX-Jh9">
-                                                    <rect key="frame" x="63" y="7" width="287.66666666666669" height="34.666666666666664"/>
+                                                    <rect key="frame" x="63" y="7.3333333333333321" width="289.33333333333331" height="33.666666666666671"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Place" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ald-Gp-Z3y">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Place" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ald-Gp-Z3y">
                                                             <rect key="frame" x="0.0" y="0.0" width="44.666666666666664" height="20.333333333333332"/>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comment" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zOX-Pw-ftS">
-                                                            <rect key="frame" x="0.0" y="20.333333333333336" width="55" height="14.333333333333336"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Comment" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zOX-Pw-ftS">
+                                                            <rect key="frame" x="0.0" y="20.333333333333332" width="50.666666666666664" height="13.333333333333332"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                                             <color key="textColor" systemColor="secondaryLabelColor"/>
                                                             <nil key="highlightedColor"/>
@@ -341,7 +342,7 @@
                             <tableViewSection headerTitle="Details" id="fkV-h4-dYv">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="240" id="XiG-fe-PlR">
-                                        <rect key="frame" x="0.0" y="55.333332061767578" width="414" height="240"/>
+                                        <rect key="frame" x="0.0" y="49" width="414" height="240"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XiG-fe-PlR" id="JcU-VF-RoT">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="240"/>
@@ -375,7 +376,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="wT9-Wn-T7O" detailTextLabel="YCa-Ly-sob" style="IBUITableViewCellStyleValue1" id="ieu-1O-mnt">
-                                        <rect key="frame" x="0.0" y="295.33333206176758" width="414" height="43.666667938232422"/>
+                                        <rect key="frame" x="0.0" y="289" width="414" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ieu-1O-mnt" id="f6P-4W-1w5">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
@@ -399,7 +400,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="FWY-ir-fC8" detailTextLabel="EmB-Fo-QCw" style="IBUITableViewCellStyleValue1" id="z2E-ys-c5Z">
-                                        <rect key="frame" x="0.0" y="339" width="414" height="43.666667938232422"/>
+                                        <rect key="frame" x="0.0" y="332.66666793823242" width="414" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="z2E-ys-c5Z" id="s8J-WW-v2r">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
@@ -423,7 +424,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="ga6-WR-H0m" detailTextLabel="OJj-Jw-GrN" style="IBUITableViewCellStyleValue1" id="QJV-As-bjL">
-                                        <rect key="frame" x="0.0" y="382.66666793823242" width="414" height="43.666667938232422"/>
+                                        <rect key="frame" x="0.0" y="376.33333587646484" width="414" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QJV-As-bjL" id="Wja-5Y-tbN">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
@@ -447,7 +448,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="L98-8N-1x9">
-                                        <rect key="frame" x="0.0" y="426.33333587646484" width="414" height="43.666667938232422"/>
+                                        <rect key="frame" x="0.0" y="420.00000381469727" width="414" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="L98-8N-1x9" id="1oS-XZ-JPg">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
@@ -462,7 +463,7 @@
                                                             <color key="textColor" systemColor="secondaryLabelColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lgL-nd-ZFa" customClass="CosmosView" customModule="Cosmos">
+                                                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lgL-nd-ZFa" customClass="CosmosView" customModule="Cosmos">
                                                             <rect key="frame" x="237" y="0.0" width="145" height="17.666666666666668"/>
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <userDefinedRuntimeAttributes>
@@ -494,7 +495,7 @@
                             <tableViewSection headerTitle="Location" id="HnF-SD-dGO">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="300" id="Noh-qY-5er">
-                                        <rect key="frame" x="0.0" y="526.00000381469727" width="414" height="300"/>
+                                        <rect key="frame" x="0.0" y="513.33333778381348" width="414" height="300"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Noh-qY-5er" id="S6l-O1-iUT">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
@@ -661,7 +662,7 @@
         <!--Poops Navigation-->
         <scene sceneID="H3G-Jw-pq4">
             <objects>
-                <navigationController title="Poops Navigation" automaticallyAdjustsScrollViewInsets="NO" id="e8x-8T-cQ4" customClass="PoopsNavigation" customModule="PooperTrooper" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController title="Poops Navigation" automaticallyAdjustsScrollViewInsets="NO" id="e8x-8T-cQ4" customClass="NavController" customModule="PooperTrooper" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Poops" image="Poop" id="Yzl-kd-T2t"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="jvT-2C-2SU">
@@ -772,7 +773,7 @@
         <!--Profile Navigation-->
         <scene sceneID="5te-sP-Z6Q">
             <objects>
-                <navigationController title="Profile Navigation" automaticallyAdjustsScrollViewInsets="NO" id="gNo-ZY-pNL" customClass="ProfileNavigation" customModule="PooperTrooper" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController title="Profile Navigation" automaticallyAdjustsScrollViewInsets="NO" id="gNo-ZY-pNL" customClass="NavController" customModule="PooperTrooper" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Profile" image="person.circle" catalog="system" selectedImage="person.circle.fill" id="gLq-cT-mH4"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="7ER-3B-KNj">
@@ -846,9 +847,10 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Settings" id="PRa-NC-o5S">
-                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="XKj-7J-jIL">
+                        <barButtonItem key="leftBarButtonItem" image="x.circle.fill" catalog="system" style="done" id="XKj-7J-jIL">
+                            <color key="tintColor" systemColor="systemGrayColor"/>
                             <connections>
-                                <action selector="dismissAction:" destination="td9-mn-1uX" id="lP7-L1-P6T"/>
+                                <segue destination="8vE-P5-ilC" kind="unwind" identifier="closeSettings" unwindAction="settingsClosedWithUnwindSegue:" id="tss-sQ-s5F"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -863,7 +865,7 @@
         <!--Add Poop Navigation-->
         <scene sceneID="V5Y-5s-vdh">
             <objects>
-                <navigationController title="Add Poop Navigation" automaticallyAdjustsScrollViewInsets="NO" id="1qO-29-8zw" customClass="NewPoopNavigation" customModule="PooperTrooper" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController title="Add Poop Navigation" automaticallyAdjustsScrollViewInsets="NO" id="1qO-29-8zw" customClass="NavController" customModule="PooperTrooper" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="RCa-bJ-4lP"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="AGX-Pr-yBV">
@@ -876,13 +878,14 @@
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Swq-nT-uqL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Bm0-Rp-qou" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2293" y="-611"/>
         </scene>
         <!--About Navigation-->
         <scene sceneID="Sdv-ZB-vbi">
             <objects>
-                <navigationController title="About Navigation" automaticallyAdjustsScrollViewInsets="NO" id="XmA-Wr-i6r" customClass="AboutNavigation" customModule="PooperTrooper" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController title="About Navigation" automaticallyAdjustsScrollViewInsets="NO" id="XmA-Wr-i6r" customClass="NavController" customModule="PooperTrooper" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="About" image="info.circle" catalog="system" selectedImage="info.circle.fill" id="wTM-p1-oyv"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="gca-t7-Hp1">
@@ -901,7 +904,7 @@
         <!--Settings Navigation-->
         <scene sceneID="lNL-wd-El1">
             <objects>
-                <navigationController title="Settings Navigation" automaticallyAdjustsScrollViewInsets="NO" id="znV-Kq-TFr" customClass="SettingsNavigation" customModule="PooperTrooper" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController title="Settings Navigation" automaticallyAdjustsScrollViewInsets="NO" id="znV-Kq-TFr" customClass="NavController" customModule="PooperTrooper" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="YIS-Zx-dvg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
@@ -913,18 +916,11 @@
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R9z-zq-MMq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="8vE-P5-ilC" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2293" y="-1330"/>
         </scene>
     </scenes>
-    <designables>
-        <designable name="Mcf-kb-qPF">
-            <size key="intrinsicContentSize" width="145" height="25"/>
-        </designable>
-        <designable name="lgL-nd-ZFa">
-            <size key="intrinsicContentSize" width="145" height="25"/>
-        </designable>
-    </designables>
     <resources>
         <image name="Poop" width="21" height="20"/>
         <image name="gearshape" catalog="system" width="128" height="121"/>
@@ -933,8 +929,13 @@
         <image name="logo" width="1024" height="1024"/>
         <image name="person.circle" catalog="system" width="128" height="121"/>
         <image name="person.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="x.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="xmark.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -6,14 +6,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
     let lm = CLLocationManager()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        registerDefaults()
         lm.delegate = self
-        
         if lm.authorizationStatus == .denied || lm.authorizationStatus == .notDetermined || lm.authorizationStatus == .restricted {
             lm.requestAlwaysAuthorization()
         }
-        
         UNUserNotificationCenter.current().delegate = self
-        
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound], completionHandler: { authorized, error in
             if authorized {
                 DispatchQueue.main.async(execute: {
@@ -21,11 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
                 })
             }
         })
-        
         if UserDefaults.standard.string(forKey: "mapZoom") == nil {
             UserDefaults.standard.setValue("Near", forKey: "mapZoom")
         }
-        
         return true
     }
     
@@ -36,13 +32,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
         completionHandler()
     }
-    
-    // MARK: UISceneSession Lifecycle
-    
+        
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
         return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
     }
     
     func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
+    }
+}
+
+extension AppDelegate {
+    func registerDefaults() {
+        let pathStr = Bundle.main.bundlePath
+        let settingsBundlePath = (pathStr as NSString).appendingPathComponent("Settings.bundle")
+        let finalPath = (settingsBundlePath as NSString).appendingPathComponent("Root.plist")
+        let settingsDict = NSDictionary(contentsOfFile: finalPath)
+        guard let prefSpecifierArray = settingsDict?.object(forKey: "PreferenceSpecifiers") as? [[String: Any]] else {
+            return
+        }
+        var defaults = [String: Any]()
+        for prefItem in prefSpecifierArray {
+            guard let key = prefItem["Key"] as? String else {
+                continue
+            }
+            defaults[key] = prefItem["DefaultValue"]
+        }
+        UserDefaults.standard.register(defaults: defaults)
     }
 }
